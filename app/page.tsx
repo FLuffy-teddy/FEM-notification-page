@@ -1,48 +1,39 @@
 import Navbar from "../components/navbar";
 import Image from "next/image";
+import Usermessage from "@/components/usermessage";
 
 export default function Home() {
   return (
-    <main className="p-4 bg-white">
+    <main className="p-4 bg-white min-h-screen">
       <Navbar />
-      <div className="bg-slate-100 p-4 my-1 flex items-center">
-        <Image
-          className="p-2"
-          src="/avatar-mark-webber.webp"
-          alt={"User Image"}
-          width={50}
-          height={50}
-        />
-        <div className="flex items-center">
-          <h3 className="text-xl text-black">
-            Mark Webber{" "}
-            <span className="text-lg text-slate-400">
-              reacted to your recent post
-            </span>
-            <span className="text-lg text-slate-600">
-              {" "}
-              My first tournament today!
-            </span>
-          </h3>
-          <h4 className="text-lg text-slate-400">1m ago</h4>
-        </div>
-      </div>
-      <div className="bg-slate-100 p-4 my-1 flex items-center">
-        <Image
-          className="p-2"
-          src="/avatar-angela-gray.webp"
-          alt={"User Image"}
-          width={50}
-          height={50}
-        />
-        <div className="flex items-center">
-          <h3 className="text-xl text-black">
-            Angela Gray{" "}
-            <span className="text-lg text-slate-400">followed you</span>
-          </h3>
-          <h4 className="text-lg text-slate-400">5m ago</h4>
-        </div>
-      </div>
+      <Usermessage
+        imagePath="/avatar-mark-webber.webp"
+        user="Mark Webber"
+        action="reacted to your recent post"
+        post="My first tournament today!"
+        time="1m ago"
+      />
+      <Usermessage
+        imagePath="/avatar-angela-gray.webp"
+        user="Angela Gray"
+        action="followed you"
+        time="5m ago"
+      />
+      <Usermessage
+        imagePath="/avatar-mark-webber.webp"
+        user="Mark Webber"
+        action="reacted to your recent post"
+        post="My first tournament today!"
+        time="1m ago"
+      />
+      <Usermessage
+        imagePath="/avatar-jacob-thompson.webp"
+        user="Jacob Thompson"
+        action="has joined your group"
+        post="Chess Club"
+        postClub={true}
+        time="1 day ago"
+      />
       <div className="bg-slate-100 p-4 my-1 flex items-center">
         <Image
           className="p-2"
