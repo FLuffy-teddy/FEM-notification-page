@@ -1,0 +1,86 @@
+[
+  {
+    "id": "1",
+    "user": "Mark Webber",
+    "image": "/avatar-mark-webber.webp",
+    "action": "reacted to your recent post",
+    "post": "My first tournament today!",
+    "postClub": null,
+    "time": "1m ago",
+    "seen": false,
+    "commentImage": null,
+    "comment": null
+  },
+  {
+    "id": "2",
+    "user": "Angela Gray",
+    "image": "/avatar-angela-gray.webp",
+    "action": "followed you",
+    "post": null,
+    "postClub": null,
+    "time": "5m ago",
+    "seen": false,
+    "commentImage": null,
+    "comment": null
+  },
+  {
+    "id": "3",
+    "user": "Jacob Thompson",
+    "image": "/avatar-jacob-thompson.webp",
+    "action": "has joined your group",
+    "post": "Chess Club",
+    "postClub": true,
+    "time": "1 day ago",
+    "seen": false,
+    "commentImage": null,
+    "comment": null
+  },
+  {
+    "id": "4",
+    "user": "Rizky Hasanuddin",
+    "image": "/avatar-rizky-hasanuddin.webp",
+    "action": "sent you a private message",
+    "post": "Chess Club",
+    "postClub": false,
+    "time": "5 days ago",
+    "seen": true,
+    "commentImage": null,
+    "comment": "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game."
+  },
+  {
+    "id": "5",
+    "user": "Kimberly Smith",
+    "image": "/avatar-kimberly-smith.webp",
+    "action": "commented on your picture",
+    "post": null,
+    "postClub": false,
+    "time": "1 week ago",
+    "seen": true,
+    "commentImage": "/image-chess.webp",
+    "comment": null
+  },
+  {
+    "id": "6",
+    "user": "Nathan Peterson",
+    "image": "/avatar-nathan-peterson.webp",
+    "action": "reacted to your recent post",
+    "post": "5 end-game strategies to increase your win rate",
+    "postClub": false,
+    "time": "2 weeks ago",
+    "seen": true,
+    "commentImage": null,
+    "comment": null
+  },
+  {
+    "id": "7",
+    "user": "Ana Kim",
+    "image": "/avatar-anna-kim.webp",
+    "action": "has left the group",
+    "post": "Chess Club",
+    "postClub": true,
+    "time": "2 weeks ago",
+    "seen": true,
+    "commentImage": null,
+    "comment": null
+  }
+]

@@ -1,23 +1,22 @@
-"use client";
-
 import Image from "next/image";
 import { useState } from "react";
 
 interface AcceptedProps {
-  imagePath: string;
   user: string;
+  imagePath: string;
   action: string;
-  post?: string;
-  postClub?: boolean;
+  post?: string | null;
+  postClub?: boolean | null;
   time: string;
-  seen?: boolean;
-  commentImage?: string;
-  comment?: string;
+  seen: boolean;
+  commentImage?: string | null;
+  comment?: string | null;
+  messageFunction?: () => void;
 }
 
 export default function Usermessage({
-  imagePath,
   user,
+  imagePath,
   action,
   post,
   postClub,
@@ -25,15 +24,10 @@ export default function Usermessage({
   seen,
   commentImage,
   comment,
+  messageFunction,
 }: AcceptedProps) {
   const postResponseColor = postClub ? "text-blue-500" : "text-slate-600";
   const postSeenBG = seen ? "bg-white" : "bg-slate-100";
-
-  const [messageSeen, setMessageSeen] = useState(Boolean);
-
-  function updateSeen() {
-    seen: !messageSeen;
-  }
 
   return (
     <>
@@ -55,7 +49,7 @@ export default function Usermessage({
             </h3>
             {!seen ? (
               <button
-                onClick={updateSeen}
+                onClick={messageFunction}
                 className="h-2 w-2 bg-red-500 rounded-full"
               ></button>
             ) : null}
