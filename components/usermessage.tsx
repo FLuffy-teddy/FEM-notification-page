@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { useState } from "react";
 
 interface AcceptedProps {
   user: string;
@@ -26,8 +25,8 @@ export default function Usermessage({
   comment,
   messageFunction,
 }: AcceptedProps) {
-  const postResponseColor = postClub ? "text-blue-500" : "text-slate-600";
-  const postSeenBG = seen ? "bg-white" : "bg-slate-100";
+  const postResponseColor = postClub ? "text-blue" : "text-grayblue";
+  const postSeenBG = seen ? "bg-white" : "bg-lightblue1";
 
   return (
     <>
@@ -41,24 +40,27 @@ export default function Usermessage({
         />
         <div>
           <div className="flex items-center">
-            <h3 className="text-xl text-black">
-              {user} <span className="text-lg text-slate-400">{action}</span>
+            <h3 className="text-black font-bold">
+              {user} <span className="text-grayblue">{action}</span>
               {post ? (
-                <span className={`text-lg ${postResponseColor} `}> {post}</span>
+                <span className={`font-bold ${postResponseColor} `}>
+                  {" "}
+                  {post}
+                </span>
               ) : null}
             </h3>
             {!seen ? (
               <button
                 onClick={messageFunction}
-                className="h-2 w-2 bg-red-500 rounded-full"
+                className="h-2 w-2 bg-red rounded-full ml-4"
               ></button>
             ) : null}
           </div>
           <div>
-            <h4 className="text-lg text-slate-400">{time}</h4>
+            <h4 className="text-grayblue">{time}</h4>
           </div>
           {comment ? (
-            <div className="border border-slate-400 text-slate-400 rounded-md p-4">
+            <div className="border border-darkgrayblue text-darkgrayblue bg-lightblue2 rounded-md p-4">
               {comment}
             </div>
           ) : null}

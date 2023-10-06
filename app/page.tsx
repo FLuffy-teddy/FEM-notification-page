@@ -33,7 +33,7 @@ export default function Home() {
   }
 
   return (
-    <main className="p-4 bg-white min-h-screen max-w-xl m-auto">
+    <main className="p-4 bg-white min-h-screen max-w-3xl m-auto text-[16px]">
       <Navbar />
       {data.map((notification) => (
         <Usermessage
